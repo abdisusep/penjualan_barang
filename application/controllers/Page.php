@@ -5,7 +5,7 @@ class Page extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('template/master');
+		$this->load->view('home');
 	}
 
 	public function transaki()
