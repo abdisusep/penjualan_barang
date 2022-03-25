@@ -39,7 +39,7 @@
                   <a href="<?= base_url('transaksi_baru') ?>" class="btn btn-primary"><i class="fas fa-plus"></i> Transaksi Baru</a>
                 </div>
                 <div class="card-body">
-                  <table class="table table-bordered">
+                  <table class="table table-bordered" id="tabelTransaksi">
                     <thead>
                       <tr>
                         <th>Kode Transaksi</th>
@@ -48,16 +48,7 @@
                         <th>Tanggal</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <th>1</th>
-                        <td>
-                          <p>Odol [5000] x 1 = 5000</p>
-                          <p>Sabun [10000] x 2 = 20000</p>
-                        </td>
-                        <td>Rp.250000</td>
-                        <td>@mdo</td>
-                      </tr>
+                    <tbody id="dataTransaksi">
                     </tbody>
                   </table>
                 </div>

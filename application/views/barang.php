@@ -57,7 +57,7 @@
           </div>
           <!-- /.row -->
 
-          <!-- Modal Tambah Barang -->
+          <!-- Modal Edit Barang -->
           <div class="modal fade" id="modalEditBarang" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalEditBarangLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog modal-dialog-centered">
               <div class="modal-content">
@@ -66,12 +66,7 @@
                 </div>
                 <div class="modal-body">
                   <form id="formUpdateBarang">
-                    <div class="form-row">
-                      <div class="form-group col-md-8">
-                        <label>Kode Barang</label>
-                        <input type="text" name="e_kode_barang" class="form-control">
-                      </div>
-                    </div>
+                    <input type="text" name="e_kode_barang" class="d-none">  
                     <div class="form-row">
                       <div class="form-group col-md-12">
                         <label>Nama Barang</label>

@@ -21,3 +21,4 @@ $route['update_barang'] = 'barang/update';
 // transaksi
 $route['get_transaksi'] = 'transaksi';
 $route['tambah_item'] = 'transaksi/create_item';
+$route['get_item'] = 'transaksi/get_item';

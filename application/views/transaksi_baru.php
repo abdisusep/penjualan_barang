@@ -41,7 +41,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-5">
-                            <form id="formTransaki">
+                            <form id="formTransaksi">
                             <input type="text" name="kode_transaksi" class="d-none" value="<?= $_GET['kode_transaksi']; ?>">
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
@@ -53,7 +53,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
                                         <label>Qty</label>
-                                        <input type="number" name="qty" class="form-control">
+                                        <input type="number" name="qty" class="form-control" id="t_qty" value="1">
                                     </div>
                                 </div>
                                 <button type="button" id="tambahItem" class="btn btn-dark">Tambah</button>
@@ -67,14 +67,17 @@
                                         <th>Nama Barang</th>
                                         <th>Qty</th>
                                         <th>Jumlah</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody id="dataItemTransaksi">
-                                    <tr>
-                                        <td colspan="2" class="text-right font-weight-bold">Total</td>
-                                        <td colspan="2">Rp.20000</td>
-                                    </tr>
                                 </tbody>
+                                <tfooter>
+                                  <tr>
+                                    <td colspan="2" class="text-right font-weight-bold">Total</td>
+                                    <td colspan="2">Rp. <span id="totalBayar"></span></td>
+                                  </tr>
+                                </tfooter>
                             </table>
                         </div>
                     </div>
