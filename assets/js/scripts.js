@@ -7,7 +7,7 @@ $(document).ready(function () {
     var data = $("#formTransaki").serialize();
     console.log(data)
     $.ajax({
-			url: "http://localhost/testing_ci/tambah_item",
+			url: "http://localhost/penjualan_barang/tambah_item",
 			data: data,
 			type: "post",
       dataType:'json',
@@ -26,7 +26,7 @@ $(document).ready(function () {
   $('#simpanBarang').click(function () {
     var data = $("#formTambahBarang").serialize();
 		$.ajax({
-			url: "http://localhost/testing_ci/tambah_barang",
+			url: "http://localhost/penjualan_barang/tambah_barang",
 			data: data,
 			type: "post",
       dataType:'json',
@@ -47,7 +47,7 @@ $(document).ready(function () {
   $("#tabelBarang").on('click', '.hapusBarang',function(){
     let kode_barang = $(this).attr('kb');
     $.ajax({
-			url: "http://localhost/testing_ci/hapus_barang",
+			url: "http://localhost/penjualan_barang/hapus_barang",
       type: 'post',
       dataType:'json',
       data: {kb:kode_barang},
@@ -65,7 +65,7 @@ $(document).ready(function () {
     let kode_barang = $(this).attr('kb');
     $("#modalEditBarang").modal("show");
     $.ajax({
-			url: "http://localhost/testing_ci/detail_barang",
+			url: "http://localhost/penjualan_barang/detail_barang",
       type: 'post',
       dataType:'json',
       data: {kb:kode_barang},
@@ -83,7 +83,7 @@ $(document).ready(function () {
   $('#updateBarang').click(function () {
     var data = $("#formUpdateBarang").serialize();
 		$.ajax({
-			url: "http://localhost/testing_ci/update_barang",
+			url: "http://localhost/penjualan_barang/update_barang",
 			data: data,
 			type: "post",
       dataType:'json',
@@ -101,31 +101,31 @@ $(document).ready(function () {
   });
 
 
-  function LoadItemTransaksi() {
-    $.ajax({
-      url: 'http://localhost/testing_ci/get_barang',
-      type: 'get',
-      dataType:'json',
-      success: function(data) {
-        var row = '';
-        for (var i=0; i<data.length; i++) {
-          row += '<tr>' +
-            '<td>'+ data[i].kode_barang +'</td>' +
-            '<td>'+ data[i].nama_barang +'</td>' +
-            '<td> Rp.'+ data[i].harga_barang +'</td>' +
-            '<td><button class="btn btn-danger hapusBarang" kb="'+ data[i].kode_barang+ '">Hapus</button></td>' +
-          '</tr>';
+  // function LoadItemTransaksi() {
+  //   $.ajax({
+  //     url: '/get_barang',
+  //     type: 'get',
+  //     dataType:'json',
+  //     success: function(data) {
+  //       var row = '';
+  //       for (var i=0; i<data.length; i++) {
+  //         row += '<tr>' +
+  //           '<td>'+ data[i].kode_barang +'</td>' +
+  //           '<td>'+ data[i].nama_barang +'</td>' +
+  //           '<td> Rp.'+ data[i].harga_barang +'</td>' +
+  //           '<td><button class="btn btn-danger hapusBarang" kb="'+ data[i].kode_barang+ '">Hapus</button></td>' +
+  //         '</tr>';
 
-          $('#dataItemTransaksi').html(row);
-        }
-      }
-    });
-  }
+  //         $('#dataItemTransaksi').html(row);
+  //       }
+  //     }
+  //   });
+  // }
 
   // load data barang
   function LoadData() {
     $.ajax({
-      url: 'http://localhost/testing_ci/get_barang',
+      url: 'http://localhost/penjualan_barang/get_barang',
       type: 'get',
       dataType:'json',
       success: function(data) {
