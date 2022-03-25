@@ -1,0 +1,181 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.main-header.navbar {
+  box-shadow: 0px 0px 35px #3f3f3f0d !important;
+  padding-bottom: 12px !important;
+  padding-top: 12px !important;
+  border: none !important;
+}
+
+div.brand-link {
+  background-color: #0069d9 !important;
+  padding-bottom: 17px !important;
+  padding-top: 17px !important;
+  border: none !important;
+  height: auto !important;
+}
+
+.card,
+.btn {
+  box-shadow: 0px 0px 35px #3f3f3f0d !important;
+  border-radius: 0.6rem !important;
+  border: none !important;
+}
+
+.dropdown-menu {
+  box-shadow: 0px 0px 35px #3f3f3f0d !important;
+  border-radius: 0.6rem !important;
+  font-size: 14px !important;
+  padding: 8px !important;
+  border: none !important;
+}
+
+a.dropdown-item {
+  border-radius: 0.6rem !important;
+  padding-bottom: 8px !important;
+  padding-top: 8px !important;
+}
+
+
+a.dropdown-item:hover {
+  background-color: #f4f6f9 !important;
+  color: #181818 !important;
+}
+
+a.dropdown-item:active {
+  background-color: #f4f6f9 !important;
+  color: #181818 !important;
+}
+
+a.dropdown-item:focus {
+  background-color: #f4f6f9 !important;
+  color: #181818 !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 0px 35px #3f3f3f0d !important;
+}
+
+div.user-panel {
+  padding-bottom: 16px !important;
+  padding-top: 16px !important;
+}
+
+span.brand-text {
+  font-size: 1.02rem !important;
+  color: #ffffff;
+}
+
+nav.side-menu {
+  font-size: 14px !important;
+}
+
+ul.nav li.nav-item a.nav-link {
+  padding-bottom: 11px !important;
+  padding-top: 11px !important;
+}
+
+ul.nav li.nav-item a.nav-link.active {
+  background-color: #ffffff1a !important;
+  border-radius: 0.6rem !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+}
+
+ul.nav li.nav-item a.nav-link.sub-menu.active {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+ul.nav li.nav-item a.nav-link.sub-menu.active:hover {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+ul.nav li.nav-item a.nav-link.sub-menu.active:focus {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+ul.nav li.nav-item a.nav-link.sub-menu:hover {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+ul.nav li.nav-item a.nav-link.sub-menu:focus {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+li.nav-bars{
+  background-color: #f8f9fa !important; 
+  padding-left: 5px !important; 
+  padding-right: 5px !important; 
+  border-radius: 12px !important; 
+  padding-top: -10px !important;
+  margin-left: 6px !important;
+}
+
+li.nav-item.dropdown{
+  background-color: #f8f9fa !important; 
+  padding-left: 5px !important; 
+  padding-right: 5px !important; 
+  border-radius: 12px !important; 
+  padding-top: -10px !important; 
+  margin-right: 6px !important;
+}
+
+i.right {
+  padding-top: 4px !important;
+}
+
+i.icon-list {
+  font-size: 14px !important;
+}
+
+.nav-sidebar .menu-is-opening>.nav-link i.right,
+.nav-sidebar .menu-open>.nav-link i.right {
+  transform: rotate(0deg) !important;
+}
+
+[class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link,
+[class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link,
+[class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus {
+  background-color: rgba(255, 255, 255, .1) !important;
+  border-radius: 0.6rem !important;
+}
+
+footer.main-footer {
+  box-shadow: 0px 0px 35px #3f3f3f0d !important;
+  border: none !important;
+  padding-left: 22px !important; 
+  padding-right: 28px !important; 
+  font-size: 14px !important;
+}
+
+/* sweetalert */
+.swal2-popup {
+  border-radius: 0.6rem !important;
+  border: none !important;
+  /* width: 28em !important; */
+}
+
+.swal2-styled.swal2-confirm {
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  border: none !important;
+}
+
+.swal2-styled.swal2-cancel {
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  border: none !important;
+}
+
+.swal2-html-container {
+  padding: 10px !important;
+}
