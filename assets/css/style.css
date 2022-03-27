@@ -24,6 +24,10 @@ div.brand-link {
   border: none !important;
 }
 
+.form-control{
+  box-shadow: none !important;
+}
+
 .dropdown-menu {
   box-shadow: 0px 0px 35px #3f3f3f0d !important;
   border-radius: 0.6rem !important;

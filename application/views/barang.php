@@ -46,7 +46,7 @@
                         <th>Nama Barang</th>
                         <th>Harga Barang</th>
                         <th>Stok</th>
-                        <th>Opsi</th>
+                        <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody id="dataBarang"></tbody>
@@ -237,8 +237,8 @@
                 '<td>'+ data[i].nama_barang +'</td>' +
                 '<td> Rp.'+ data[i].harga_barang +'</td>' +
                 '<td>'+ data[i].stok +'</td>' +
-                '<td><button class="btn btn-primary editBarang" kb="'+data[i].kode_barang+ '">Edit</button></td>' +
-                '<td><button class="btn btn-danger hapusBarang" kb="'+ data[i].kode_barang+ '">Hapus</button></td>' +
+                '<td><button class="btn btn-primary editBarang" kb="'+data[i].kode_barang+ '">Edit</button>' +
+                '<button class="btn btn-danger hapusBarang" kb="'+ data[i].kode_barang+ '">Hapus</button></td>' +
               '</tr>';
 
               row2 += '<option value="'+data[i].kode_barang+'">'+data[i].nama_barang+' - Rp.'+data[i].harga_barang+'</option>';
