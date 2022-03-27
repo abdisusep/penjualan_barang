@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+date_default_timezone_set('Asia/Jakarta');
+
 $config['base_url'] = 'http://localhost/penjualan_barang/';
 $config['index_page'] = '';
 $config['uri_protocol']	= 'REQUEST_URI';
