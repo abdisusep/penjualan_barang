@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tambah Barang</title>
+  <title>Transaksi Baru</title>
     <?php include 'template/css.php'; ?>
 </head>
 
@@ -21,7 +21,7 @@
         <div class="container-fluid">
           <div class="row mt-3 mb-2">
             <div class="col-sm-12">
-              <h5 class="m-0">Tambah Barang</h5>
+              <h5 class="m-0">Transaksi Baru</h5>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -66,6 +66,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nama Barang</th>
+                                        <th>Harga</th>
                                         <th>Qty</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
@@ -122,7 +123,6 @@
           type: "post",
           dataType:'json',
           success: function(result){
-            console.log(result)
             if (result.success) {
               $('#t_qty').val('0');
               LoadItemTransaksi();
@@ -144,7 +144,6 @@
           dataType:'json',
           data: 'ki='+ki+'&kb='+kb+'&kt=<?= $_GET['kode_transaksi']; ?>',
           success: function(result){
-            console.log(result)
             if (result.success) {
               LoadItemTransaksi();
             }
@@ -162,7 +161,6 @@
           dataType:'json',
           data: 'tb='+tb+'&kt=<?= $_GET['kode_transaksi']; ?>',
           success: function(result){
-            console.log(result)
             if (result.success) {
               Message('success', result.message);
               window.setTimeout(function() {
@@ -197,7 +195,6 @@
           data: 'kode_transaksi=<?= $_GET['kode_transaksi']; ?>',
           dataType:'json',
           success: function(data) {
-            // console.log(data.length)
             if (data.length < 1) {
               $('#dataItemTransaksi').hide();
               $('#selesaiTransaksi').hide();
@@ -211,6 +208,7 @@
               total = total + data[i].harga_barang * data[i].qty
               row += '<tr>' +
                 '<td>'+ data[i].nama_barang +'</td>' +
+                '<td> Rp.'+ data[i].harga_barang +'</td>' +
                 '<td>'+ data[i].qty +'</td>' +
                 '<td> Rp.'+ data[i].harga_barang*data[i].qty +'</td>' +
                 '<td><button class="btn btn-danger btn-sm hapusItem" kb="'+data[i].kode_barang+'" ki="'+data[i].kode_item_transaksi+'"><i class="fas fa-times"></i></button></td>' +

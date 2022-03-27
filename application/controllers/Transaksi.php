@@ -10,7 +10,9 @@ class Transaksi extends CI_Controller {
 
 	public function index()
 	{
-		$data = $this->db->get('transaksi')->result();
+		$this->db->from('transaksi');
+		$this->db->order_by("tanggal", $this->input->post('urut'));
+		$data = $this->db->get()->result();
 		echo json_encode($data);
 	}
 

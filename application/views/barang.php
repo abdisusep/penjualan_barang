@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>List Barang</title>
+  <title>Daftar Barang</title>
   <?php include 'template/css.php'; ?>
 </head>
 
@@ -21,7 +21,7 @@
         <div class="container-fluid">
           <div class="row mt-3 mb-2">
             <div class="col-sm-12">
-              <h5 class="m-0">List Barang</h5>
+              <h5 class="m-0">Daftar Barang</h5>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -156,7 +156,6 @@
           type: "post",
           dataType:'json',
           success: function(result){
-            console.log(result)
             if (result.success) {
               LoadDataBarang();
               $("#modalTambahBarang").modal("hide");
@@ -195,7 +194,6 @@
           dataType:'json',
           data: {kb:kode_barang},
           success: function(result){
-            // console.log(result)
             $('[name=e_kode_barang]').val(result.kode_barang);
             $('[name=e_nama_barang]').val(result.nama_barang);
             $('[name=e_harga_barang]').val(result.harga_barang);
@@ -213,7 +211,6 @@
           type: "post",
           dataType:'json',
           success: function(result){
-            // console.log(result)
             if (result.success) {
               LoadDataBarang();
               $("#modalEditBarang").modal("hide");
